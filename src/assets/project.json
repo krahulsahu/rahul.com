@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Project",
+    "technologies": "MERN Stack",
+    "image": "../assets/projectImg/proj1.png",
+    "github": "https://github.com/krahulsahu"
+  },
+  {
+    "id": 2,
+    "name": "Project",
+    "technologies": "MERN Stack",
+    "image": "./projectImg/proj2.png",
+    "github": "https://github.com/krahulsahu"
+  },
+  {
+    "id": 3,
+    "name": "Project",
+    "technologies": "MERN Stack",
+    "image": "./projectImg/proj3.png",
+    "github": "https://github.com/krahulsahu"
+  },
+  {
+    "id": 4,
+    "name": "Project",
+    "technologies": "MERN Stack",
+    "image": "./projectImg/proj4.png",
+    "github": "https://github.com/krahulsahu"
+  },
+  {
+    "id": 5,
+    "name": "Project",
+    "technologies": "MERN Stack",
+    "image": "./projectImg/proj5.png",
+    "github": "https://github.com/krahulsahu"
+  },
+  {
+    "id": 6,
+    "name": "Project",
+    "technologies": "MERN Stack",
+    "image": "./projectImg/proj6.png",
+    "github": "https://github.com/krahulsahu"
+  }
+]

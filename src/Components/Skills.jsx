@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import skills from "../assets/skill.json";
 
+
 const Skills = () => {
   const [showAll, setShowAll] = useState(false);
-
-  // Number of skills to show by default
   const defaultSkillCount = 8;
 
-  // Skills to display based on the state
   const displayedSkills = showAll ? skills : skills.slice(0, defaultSkillCount);
 
   return (
-    <section className="skills bg-gray-900 text-white py-10">
-      <div className="max-w-screen-xl mx-auto px-4">
+    <div id="skill" className="min-h-screen  bg-black text-white py-10">
+      <div className="max-w-screen-xl mx-auto px-4 mt-20">
         <h2 className="text-4xl font-bold mb-8">Skills</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="mx-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {displayedSkills.map((skill, index) => (
             <div
               key={index}
@@ -28,18 +26,46 @@ const Skills = () => {
               <span className="text-lg font-medium">{skill.name}</span>
             </div>
           ))}
-
         </div>
         {skills.length > defaultSkillCount && (
           <button
             onClick={() => setShowAll(!showAll)}
-            className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg"
+            className="mt-6  px-4 py-2 bg-indigo-600 text-white rounded-lg hover:scale-105"
           >
             {showAll ? "Show Less" : "Show More"}
           </button>
         )}
+        <div className="mt-6 flex justify-between text-center px-10 md:px-5">
+          <div>
+            <h3
+              className="text-2xl font-bold text-transparent bg-clip-text 
+                bg-gradient-to-r from-green-400 to-blue-500"
+            >
+              15+
+            </h3>
+            <p>Daily Life Projects</p>
+          </div>
+          <div className="hidden md:block">
+            <h3
+              className=" text-2xl font-bold text-transparent bg-clip-text 
+                bg-gradient-to-r from-green-400 to-blue-500"
+            >
+              300+
+            </h3>
+            <p>DSA GFG Problem Solve</p>
+          </div>
+          <div>
+            <h3
+              className="text-2xl font-bold text-transparent bg-clip-text 
+                bg-gradient-to-r from-green-400 to-blue-500"
+            >
+              350+
+            </h3>
+            <p>DSA LeetCode Problem Solve</p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
