@@ -9,7 +9,6 @@ import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import Cartification from "./Components/Cartification";
 
-
 function App() {
   return (
     <Router>
@@ -18,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Aboutme />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/certification" element={<Cartification/>} />
+        <Route path="/certification" element={<Cartification />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

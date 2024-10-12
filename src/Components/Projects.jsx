@@ -2,6 +2,7 @@ import React from "react";
 import projects from  "../assets/project.json"
 
 
+
 const Projects = () => {
   return (
     <div id="project" className="bg-black text-white py-20" id="project">
