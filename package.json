@@ -2,7 +2,7 @@
   "name": "portfolio-july24",
   "private": true,
   "version": "0.0.0",
-   "homepage": "https://krahulsahu.github.io/rahul.in",
+   "homepage": "https://krahulsahu.github.io/rahul.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
